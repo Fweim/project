@@ -27,8 +27,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
+          <tr v-for="(card,index) in this.model_cards" :key="index">
+            <td>{{card.model_details.name}}</td>
             <td></td>
             <td></td>
             <td>
